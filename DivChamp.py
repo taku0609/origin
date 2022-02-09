@@ -12,7 +12,7 @@ import time
 from pandas_datareader._utils import RemoteDataError
 
 # ブックを取得
-excel_path = '/Users/takumi/Desktop/U.S.DividendChampions.xlsx'
+excel_path = 'C:/Users/4dustd/Desktop/U.S.DividendChampions.xlsx'
 book1 = openpyxl.load_workbook(filename=excel_path)
 # シートを取得
 sheet1 = book1['Champions']
@@ -71,6 +71,9 @@ for row2 in temp_list1:
         # print(result[0])
         # print(df)
         # print()
+        """
+        remoteErrorをきゃっちする
+        """
     except Exception as e:
         time.sleep(10.0)
         try:
