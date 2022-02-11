@@ -94,7 +94,7 @@ for row2 in temp_list1:
 
     # print("i increment", i, result[0])
     k += 1
-    time.sleep(0.5)  # 連速でアクセスするとエラーになるためsleepを挟む。
+    time.sleep(0.5)  # 連続でアクセスするとエラーになりやすいためsleepを挟む。
 
 print("株価ダウンロード完了\n")
 
